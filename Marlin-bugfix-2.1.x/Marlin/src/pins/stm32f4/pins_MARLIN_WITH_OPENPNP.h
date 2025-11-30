@@ -42,23 +42,39 @@
 
 /******************** CONFIG PINS (STM32) ********************/
 
-#define LED_1 PE2 // LED 1
-#define LED_2 PE3 // LED 2
-#define LED_3 PE4 // LED 3
-#define LED_4 PE5 // LED 4
-#define LED_5 PE6 // LED 5
 
-#define FAN PD3 // Fan
-#define PUMP_1 PD4 // Pump 1
-#define PUMP_2 PD5 // Pump 2
-#define ELECTROVALVE_1 PD6 // Electrovalve 1
-#define ELECTROVALVE_2 PD7 // Electrovalve 2
-#define LIGHT_TOP PB3 // Top Light
-#define LIGHT_BOT PB4 // Bottom Light
+// list index
+//A=0
+//B=1
+//C=2
+//D=3
+//E=4
+//F=5
+
+//calcul: index * 16 + pin number
+
+// Example: PA2 = P(index*16+2) = P2
+
+//S255 = actvate
+//S0 = disactivate
+
+#define LED_1 PE2 // M42 P66 (S255 or S0)
+#define LED_2 PE3 // M42 P67 (S255 or S0)
+#define LED_3 PE4 // M42 P68 (S255 or S0)
+#define LED_4 PE5 // M42 P69 (S255 or S0)
+#define LED_5 PE6 // M42 P70 (S255 or S0)
+
+#define FAN PD3            // M42 P51 (S255 or S0)
+#define PUMP_1 PD4         // M42 P52 (S255 or S0)
+#define PUMP_2 PD5         // M42 P53 (S255 or S0)
+#define ELECTROVALVE_1 PD6 // M42 P54 (S255 or S0)
+#define ELECTROVALVE_2 PD7 // M42 P55 (S255 or S0)
+#define LIGHT_TOP PB3      // M42 P19 (S255 or S0)
+#define LIGHT_BOT PB4      // M42 P20 (S255 or S0)
 
 #define PS_TANK PA0     // Pressure sensor tank
-#define PS_VACUUM_1 PA1 // Pressure sensor vacuum 1
-#define PS_VACUUM_2 PA2 // Pressure sensor vacuum 2
+#define PS_VACUUM_1 PA1 // Pressure sensor head 1
+#define PS_VACUUM_2 PA2 // Pressure sensor head 2
 
 //
 // Limit Switches

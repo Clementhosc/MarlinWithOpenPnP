@@ -29,7 +29,7 @@
  */
 
 #include "MarlinCore.h"
-
+#include "Mesure_pression.h"
 #include "HAL/shared/Delay.h"
 #include "HAL/shared/esp_wifi.h"
 #include "HAL/shared/cpu_exception/exception_hook.h"
@@ -1745,4 +1745,5 @@ void loop() {
     TERN_(MARLIN_TEST_BUILD, runPeriodicTests());
 
   } while (ENABLED(__AVR__)); // Loop forever on slower (AVR) boards
+  //detecterPiece(PS_VACUUM_1);
 }
