@@ -75,6 +75,8 @@
 #define PS_TANK PA0     // Pressure sensor tank
 #define PS_VACUUM_1 PA1 // Pressure sensor head 1
 #define PS_VACUUM_2 PA2 // Pressure sensor head 2
+// === Ajout pour lire le capteur analogique avec M430 ===
+#define POWER_MONITOR_VOLTAGE_PIN PS_TANK
 
 //
 // Limit Switches
