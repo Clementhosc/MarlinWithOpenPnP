@@ -1301,7 +1301,7 @@
  * Override with M92 (when enabled below)
  *                                      X, Y, Z [, I [, J [, K...]]], E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 25, 11.1, 40, 500, 500 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 25, 11.1, 40, 10, 10 }
 
 /**
  * Enable support for M92. Disable to save at least ~530 bytes of flash.
@@ -1869,7 +1869,7 @@
 //#define Z_CLEARANCE_FOR_HOMING  4   // (mm) Minimal Z height before homing (G28) for Z clearance above the bed, clamps, ...
                                       // You'll need this much clearance above Z_MAX_POS to avoid grinding.
 
-#define Z_AFTER_HOMING         21   // (mm) Height to move to after homing (if Z was homed)
+#define Z_AFTER_HOMING         20   // (mm) Height to move to after homing (if Z was homed)
 //#define XY_AFTER_HOMING { 10, 10 }  // (mm) Move to an XY position after homing (and raising Z)
 
 //#define EVENT_GCODE_AFTER_HOMING "M300 P440 S200"  // Commands to run after G28 (and move to XY_AFTER_HOMING)
@@ -1905,7 +1905,7 @@
 
 // The size of the printable area
 #define X_BED_SIZE 350
-#define Y_BED_SIZE 395
+#define Y_BED_SIZE 390
 
 // Travel limits (linear=mm, rotational=°) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0
@@ -2374,7 +2374,7 @@
 #endif
 
 // Homing speeds (linear=mm/min, rotational=°/min)
-#define HOMING_FEEDRATE_MM_M { (50*60), (50*60), (10*60), (10*60), (10*60) }
+#define HOMING_FEEDRATE_MM_M { (50*60), (50*60), (35*60), (10*60), (10*60) }
 
 // Edit homing feedrates with M210 and MarlinUI menu items
 //#define EDITABLE_HOMING_FEEDRATE

@@ -43,7 +43,6 @@
 /******************** CONFIG PINS (STM32) ********************/
 
 
-<<<<<<< Updated upstream
 // list index
 //A=0
 //B=1
@@ -79,20 +78,6 @@
 // === Ajout pour lire le capteur analogique avec M430 ===
 #define POWER_MONITOR_VOLTAGE_PIN PS_TANK
 
-=======
-#define FAN PD3 // Fan //M42 P51 S255 
-#define PUMP_1 PD4 // Pump 1 //M42 P51 S255
-#define PUMP_2 PD5 // Pump 2  //M42 P51 S255
-#define ELECTROVALVE_1 PD6 // Electrovalve 1
-#define ELECTROVALVE_2 PD7 // Electrovalve 2
-#define LIGHT_TOP PB3 // Top Light
-#define LIGHT_BOT PB4 // Bottom Light
-
-#define PS_TANK PA0     // Pressure sensor tank
-#define PS_VACUUM_1 PA1 // Pressure sensor vacuum 1
-#define PS_VACUUM_2 PA2 // Pressure sensor vacuum 2
-#define POWER_MONITOR_VOLTAGE_PIN PS_TANK
->>>>>>> Stashed changes
 //
 // Limit Switches
 //
